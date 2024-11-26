@@ -1,0 +1,20 @@
+{
+	"extends": "@tsconfig/node14/tsconfig.json",
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		/* Linting */
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"allowJs": true,
+		"removeComments": true,
+		"outDir": "dist",
+	},
+	"include": [
+		"src",
+	],
+	"exclude": [
+		"dist"
+	]
+}

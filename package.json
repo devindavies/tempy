@@ -16,7 +16,8 @@
 		"node": ">=14.16"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "vitest",
+		"build": "tsc"
 	},
 	"files": [
 		"index.js",
@@ -37,22 +38,17 @@
 		"unique"
 	],
 	"dependencies": {
-		"is-stream": "^3.0.0",
-		"temp-dir": "^3.0.0",
-		"type-fest": "^2.12.2",
-		"unique-string": "^3.0.0"
+		"temp-dir": "^3.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "^20.4.1",
-		"ava": "^5.3.1",
+		"@biomejs/biome": "^1.8.3",
+		"@tsconfig/node14": "^14.1.2",
+		"@types/node": "^20.14.14",
+		"@types/touch": "^3.1.5",
+		"@vitest/coverage-v8": "^2.1.6",
 		"path-exists": "^5.0.0",
-		"touch": "^3.1.0",
-		"tsd": "^0.28.1",
-		"xo": "^0.54.2"
-	},
-	"xo": {
-		"rules": {
-			"@typescript-eslint/no-redundant-type-constituents": "off"
-		}
+		"touch": "^3.1.1",
+		"typescript": "^5.5.4",
+		"vitest": "^2.1.6"
 	}
 }
